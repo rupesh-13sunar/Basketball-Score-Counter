@@ -9,13 +9,20 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    flex-flow: wrap;
+    justify-content: space-evenly;
 }
-
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: min(300px , 50vh);
+}
 h3 {
-    font-size: bold;
+    /* font-size: bold; */
     font-size: 2.5rem;
     color: #eee;
+    margin: 0;
 }
 
 .timer {
@@ -38,6 +45,25 @@ h3 {
 .reset {
     font-family: inherit;
     font-weight: bold;
+    font-size: 1.1rem;
     background-color: #42b72a;
     color: #eee;
+    width: min(150px , 50vw);
+    height: auto;
+    border-radius: 4px;
+}
+
+/*adding pseudo class && elements*/
+button.points-number:hover {
+   color: #42b72a;
+}
+button.points-number:active {
+    background-color: #42b72a;
+    color: #1B244A;
+}
+button.reset:hover {
+    background-color: hsl(110, 48%, 58%);
+}
+button.reset:active {
+    color: #F94F6D;
 }
