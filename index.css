@@ -67,3 +67,22 @@ button.reset:hover {
 button.reset:active {
     color: #F94F6D;
 }
+
+/*adding style for pop-ups*/
+#final-result {
+    position: absolute;
+    font-style: oblique;
+    font-weight: 900;
+    font-family: "Hobo Std", cursive;
+    color: #eee;
+    top: 11rem;
+    width: 100%;
+    background-color: #F94F6D;
+    text-shadow: 2px 2px 3px #080001;
+}
+.pop-up {
+    font-style: oblique;
+    font-weight: bold;
+    color: #bd8e16;
+}
+
